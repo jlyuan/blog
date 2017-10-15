@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://www.17sucai.com/preview/469244/2015-12-30/web/web/index.html -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>franklin个人博客</title>
+    <meta name="keywords" content="个人博客">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/article.css">
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+
+    <script type="text/javascript" src="../js/jquery1.42.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.SuperSlide.2.1.1.js"></script>
+    <!--[if lt IE 9]>
+    <script src="../js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <!--header start-->
+    <div id="header">
+      <h1>franklin个人博客</h1>
+      <p>青春是打开了,就合不上的书。人生是踏上了，就回不了头的路，爱情是扔出了，就收不回的赌注。</p>
+    </div>
+     <!--header end-->
+    <!--nav-->
+     <div id="nav">
+        <ul>
+         <li><a href="../index.html" id="nava">首页</a></li>
+         <li><a href="../about.html">关于我</a></li>
+         <li><a href="../shuo.html">碎言碎语</a></li>
+         <li><a href="../note.html">个人日记</a></li>
+         <li><a href="../img.html">相册展示</a></li>
+         <li><a href="../learn.html">学无止境</a></li>
+         <li><a href="../message.html">留言板</a></li>
+         <div class="clear"></div>
+        </ul>
+      </div>
+       <!--nav end-->
+    <!--content start-->
+    <div id="content">
+         <!--left-->
+         <div class="left" id="c_left">
+             <div class="article">
+
+                 <h2>python实现斐波那契数列方式</h2>
+                 <div class="main">
+                     <p>斐波那契数列，又称黄金分割数列，指的是这样一个数列：0、1、1、2、3、5、8、13、21、……在数学上，斐波纳契数列以如下递归的方法定义：
+F（0）=0，F（1）=1，F（n）=F(n-1)+F(n-2)（n≥2，n∈N*）</p>
+                     <h5>第一种实现方式</h5>
+                     <div class="con">
+                         <textarea name="" id="" cols="" rows="17">
+                                #参数stop代表的是某数值范围内的斐波那契数列
+                                def f(stop,arg1=0,arg2=1):
+                                    if stop == 0 :
+                                        print (0)
+                                        return
+                                    if stop == 1:
+                                        print ("0,1,1")
+                                        return
+                                    if arg1 == 0:
+                                        print(arg1)
+                                        print(arg2)
+                                        arg3 = arg1+arg2
+                                    if stop >= arg3:
+                                        print(arg3)
+                                        f(stop,arg2,arg3)
+                                #f(33) #调用
+                         </textarea>
+                     </div>
+                     <h5>第二种实现方式</h5>
+                     <div class="con">
+                         <textarea name="" id="" cols="" rows="12">
+                             l=[0,1]
+                            #参数stop代表的是某数值范围内的斐波那契数列
+                             def f(stop,arg1=0,arg2=1):
+                                arg3=arg1+arg2
+                                if stop>= arg3:
+                                    l.append(arg3)
+                                    return f(stop,arg2,arg3,)
+                            #调用
+                             f(1000)
+                             print(l)
+
+                         </textarea>
+                     </div>
+                       <h5>第三种实现方式</h5>
+                     <div class="con">
+                         <textarea name="" id="" cols="" rows="8">
+                               #求斐波那契前10项
+                                fibs = [0, 1]
+                                for i in range(8):
+                                    #数列最后两项值求和，在追加到数列
+                                    fibs.append(fibs[-2] + fibs[-1])
+                                print(fibs)
+                         </textarea>
+                     </div>
+                 </div>
+             </div>
+
+         </div>
+         <!--left end-->
+         <!--right-->
+         <div class="right" id="c_right">
+          <div class="s_about">
+          <h2>关于博主</h2>
+           <img src="../images/my.jpg" width="230" height="230" alt="博主">
+           <p>博主：franklin</p>
+           <p>职业：web前端、python开发</p>
+           <p>简介：</p>
+           <p>
+           <a href="../about.html" title="联系博主"><span class="left b_1"></span></a><a href="#" title="加入QQ群，一起学习！"><span class="left b_2"></span></a>
+           </p><div class="clear"></div>
+           <p></p>
+          </div>
+          <!--栏目分类-->
+           <div class="lanmubox">
+              <div class="hd">
+               <ul><li class="on">精心推荐</li><li>最新文章</li><li class="hd_3">随机文章</li></ul>
+              </div>
+              <div class="bd">
+                <ul>
+					<li><a href="#" title="网站项目实战开发（-）">网站项目实战开发（-）</a></li>
+					<li><a href="#" title="关于响应式布局">关于响应式布局</a></li>
+					<li><a href="#" title="如何创建个人博客网站">如何创建个人博客网站</a></li>
+					<li><a href="#" title="网站项目实战开发（二）">网站项目实战开发（二）</a></li>
+					<li><a href="#" title="为什么新站前期排名老是浮动？(转)">为什么新站前期排名老是浮动？(转)</a></li>
+				</ul>
+                 <ul style="display: none;">
+					<li><a href="#" title="网站项目实战开发（-）">网站项目实战开发（-）</a></li>
+					<li><a href="#" title="关于响应式布局">关于响应式布局</a></li>
+					<li><a href="#" title="如何创建个人博客网站">如何创建个人博客网站</a></li>
+					<li><a href="#" title="网站项目实战开发（二）">网站项目实战开发（二）</a></li>
+					<li><a href="#" title="为什么新站前期排名老是浮动？(转)">为什么新站前期排名老是浮动？(转)</a></li>
+				</ul>
+                 <ul style="display: none;">
+					<li><a href="#" title="网站项目实战开发（-）">网站项目实战开发（-）</a></li>
+					<li><a href="#" title="关于响应式布局">关于响应式布局</a></li>
+					<li><a href="#" title="如何创建个人博客网站">如何创建个人博客网站</a></li>
+					<li><a href="#" title="网站项目实战开发（二）">网站项目实战开发（二）</a></li>
+					<li><a href="#" title="为什么新站前期排名老是浮动？(转)">为什么新站前期排名老是浮动？(转)</a></li>
+				</ul>
+
+
+              </div>
+           </div>
+           <!--end-->
+           <div class="link">
+            <h2>友情链接</h2>
+            <p><a href="#">XX个人博客</a></p>
+           </div>
+         </div>
+         <!--right end-->
+         <div class="clear"></div>
+    </div>
+    <!--content end-->
+    <!--footer start-->
+    <div id="footer">
+     <p>Design by:<a href="#" target="_blank">少年</a> 2017-8-9</p>
+    </div>
+    <!--footer end-->
+    <script type="text/javascript">jQuery(".lanmubox").slide({easing:"easeOutBounce",delayTime:400});</script>
+    <script type="text/javascript" src="../js/nav.js"></script>
+
+
+</body></html>

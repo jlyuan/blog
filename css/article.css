@@ -1,0 +1,13 @@
+
+/*article css*/
+
+#c_left .article{margin:0 20px;}
+#c_left .article h2{height:90px;line-height:90px;text-align:center;
+border-bottom:1px solid #dddddd;font-size:20px;}
+
+#c_left .article .main{}
+#c_left .article .main p{text-indent:2em;line-height:30px;font-size:16px;}
+#c_left .article .main h5{font-size:16px;height:50px;line-height:50px;}
+#c_left .article .main .con textarea{
+    width:100%;font-size:16px;text-align:left;
+    background-color: #f7f7f7;}

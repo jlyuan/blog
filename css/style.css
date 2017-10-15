@@ -1,7 +1,7 @@
 /* CSS Document */
 @charset "gb2312";
 *{marigin:0px; padding:0px;}
-body{font-size:14px;font-family:"微软雅黑";background:#E3E3E5 url(../images/bg.jpg)  50% top scroll no-repeat;color:#5d5d5d;}
+body{font-size:14px;font-family:"微软雅黑";background:#E3E3E5 url("../images/bg.jpg")  50% top scroll no-repeat;color:#5d5d5d;}
 a{text-decoration:none;}
 .left{float:left;}
 .right{float:right;}
@@ -15,9 +15,22 @@ border-bottom:1px solid #ccc;}
 .weizi .wz_text h1{font-size:16px;color:#F00E71;display:inline;font-weight:500;}
 .weizi .wz_text a{color:#444;}
 .weizi .wz_text a:hover{text-decoration:underline;color:#f00;}
+
 /*about*/
-#content #about_me{width:730px;height:500px;background-color:#fff;}
-#about_me .about_content{width:710px;height:300px;margin-top:10px;padding:0 10px;}
+
+/*#content #about_me{width:730px;height:500px;background-color:#fff;}*/
+/*#about_me .about_content{width:710px;height:300px;margin-top:10px;padding:0 10px;}*/
+
+#content .content_text table{border-collapse:collapse;margin:0 auto 40px;}
+#content .content_text table th{ background:#ebfaf3;height:35px;font-size:16px;}
+#content .content_text td{width:150px;height:30px;text-align:center;}
+#content .content_text td.spec{width:100px;}
+#content .content_text td.title{text-align:left;font-weight:bold}
+#content .content_text td.textarea{text-align:left;}
+#content .content_text td p{text-indent:2em;}
+#content .content_text td span{display:inline-block;width:140px;height:20px;}
+#content .content_text th{background-color:#ebfaf3}
+
 /*碎言碎语*/
 #say{width:950px;margin:5px auto;}
 #say .weizi{width:920px;height:28px;line-height:28px; background:url("../images/weizi.png") 7px 5px no-repeat; background-color:#fff;border-radius:3px;}
@@ -27,7 +40,7 @@ border-bottom:1px solid #ccc;}
 .weizi .wz_text a:hover{text-decoration:underline;color:#f00;}
 .say_box {background:#f8f8f8;box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba(214, 214, 214, 0.7);width:740px; border-radius:5px;position:relative; padding: 20px 0;
 margin:10px 0;font-size:14px;font-family:"宋体"; }
-.say_box p {line-height:24px;padding:0 20px 20px ;}
+.say_box p {text-indent:2em;line-height:24px;padding:0 20px 20px ;}
 .say_box::before {content: "";width:0px;height:0px;border-style:solid;border-width:0px 0 20px 22px;border-color:transparent transparent transparent #fff;position:absolute;left:740px;top: 23px; }/* 三角形 */
 .say_box::after {content: "";width: 10px;height: 10px;border-radius: 50%;position:absolute;left:763px;top:16px;background:#CCCCCE;border: 2px solid #fff;transition:all 0.5s; }/* 圆形 */
 .say_box:hover::before {border-color:transparent transparent transparent #CECCCD }/* 三角形 */
@@ -46,6 +59,8 @@ filter:Alpha(opacity=80);-moz-opacity: 0.8; opacity: 0.8;}
 filter:Alpha(opacity=80);-moz-opacity: 0.8; opacity: 0.8;
 margin:10px 10px 0px 10px;position:relative;border-radius:5px;padding:10px;color:#4F4F4F;}
 .rj_content .shiguang .sg_text img{position:absolute;top:40px;left:-14px;z-index:1;}
+.rj_content .shiguang .sg_text p{text-indent:2em;}
+
 /*相册*/
 #content_xc{width:990px;margin:5px auto; background:#fff;}
 #content_xc .weizi{width:990px;height:30px;line-height:30px; background:url("../images/weizi.png") 7px 5px no-repeat; background-color:#fff;
@@ -97,11 +112,13 @@ background:url("../images/sj.jpg") 5px 7px no-repeat;padding-left:25px;margin-le
 background:url("../images/tx.jpg") 5px 9px no-repeat;padding-left:25px;margin-left:20px;}
 #news .news_content .news_text{width:710px;}
 /*留言板*/
-#content #guestbook{width:730px;height:500px;background:#fff;}
+#content #guestbook{width:730px;height:550px;background:#fff;}
 #guestbook .g_content{width:710px;height:300px;margin-top:10px;padding:0 10px;}
 
 
-
+/*样式微调*/
+#content #note{height:220px;}
+#content #learn1{height:166px;}
 
 
 
