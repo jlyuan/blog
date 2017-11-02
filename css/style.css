@@ -112,15 +112,15 @@ background:url("../images/sj.jpg") 5px 7px no-repeat;padding-left:25px;margin-le
 background:url("../images/tx.jpg") 5px 9px no-repeat;padding-left:25px;margin-left:20px;}
 #news .news_content .news_text{width:710px;}
 /*留言板*/
-#content #guestbook{width:730px;height:550px;background:#fff;}
+#content #guestbook{width:730px;height:556px;background:#fff;}
 #guestbook .g_content{width:710px;height:300px;margin-top:10px;padding:0 10px;}
 
 
 /*样式微调*/
-#content #note{height:220px;}
-#content #learn1{height:166px;}
+#content #note{height:212px;}
+#content #learn1{height:162px;}
 
-
+.about_me .about{margin:0 130px;}
 
 
 
