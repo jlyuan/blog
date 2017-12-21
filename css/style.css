@@ -30,6 +30,11 @@ border-bottom:1px solid #ccc;}
 #content .content_text td p{text-indent:2em;}
 #content .content_text td span{display:inline-block;width:140px;height:20px;}
 #content .content_text th{background-color:#ebfaf3}
+#content .project  p{text-indent:2em;}
+#content .project  h5{text-indent:2em;}
+#content .project  ul{padding-left:2em;}
+#content .project  ul li{text-indent:3em;}
+
 
 /*碎言碎语*/
 #say{width:950px;margin:5px auto;}
