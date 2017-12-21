@@ -139,25 +139,57 @@
                       <td class="title" colspan="5">作品展示</td>
                   </tr>
                   <tr>
-                      <td class="textarea" colspan="5">
-                          <div>
-                              <h5>1、<a href="https://github.com/jlyuan/webFont">https://github.com/jlyuan/webFont</a></h5>
+                       <td class="textarea" colspan="5">
+
+                          <div class="project">
+                              <h4>1、<a href="https://github.com/jlyuan/webFont">https://github.com/jlyuan/webFont</a>
+                              </h4>
                               <p>简介：电商网站首页前端静态页面，使用HTML + CSS + JQuery开发</p>
                           </div>
-                           <div>
-                              <h5>2、<a href="https://gitee.com/jlyuan/ihome/tree/franklin/">https://gitee.com/jlyuan/ihome/tree/franklin/</a></h5>
-                              <p>  简介：租房网站，为用户进行房屋短期分享搭建了一个平台。房东将房屋信息发布到平台上，可供房客浏览、搜索、预订和交易。前后端分离，采用Restful风格的接口实现前后端通信，使用json 数据进行传输；用户头像图片和房屋图片使用七牛图片云存储；使用Flask + mysql + redis  开发。</p>
+                          <div class="project">
+                              <h4>2、<a href="https://gitee.com/jlyuan/ihome/tree/franklin/">https://gitee.com/jlyuan/ihome/tree/franklin/</a>
+                              </h4>
+                              <p>
+                                  简介：租房网站，为用户进行房屋短期分享搭建了一个平台。房东将房屋信息发布到平台上，可供房客浏览、搜索、预订和交易。前后端分离，采用Restful风格的接口实现前后端通信，使用json
+                                  数据进行传输；用户头像图片和房屋图片使用七牛图片云存储；使用Flask + mysql + redis 开发。</p>
+                              <h5>项目模块:</h5>
+                              <ul>
+                                  <li>
+                                      1.用户模块：登录、注册、个人信息修改相关功能，注册时通过第三方云通讯接口发送短信验证码，使用celery去执行发送，提升用户体验；用户密码使用md5加盐值方式加密存储；session数据使用redis缓存。
+                                  </li>
+                                  <li>2.房屋信息模块：房屋信息的发布、展示及用户可以根据地区、价格入住时间查询房源信息，首页房屋信息和地区信息使用redis缓存。</li>
+                                  <li>3.订单模块：提供下单、查询、接单、拒单、评论等相关功能。</li>
+                              </ul>
+
                           </div>
-                           <div>
-                              <h5>3、<a href="https://gitee.com/jlyuan/dayfresh/tree/franklin/">https://gitee.com/jlyuan/dayfresh/tree/franklin/</a></h5>
+                          <div class="project">
+                              <h4>3、<a href="https://gitee.com/jlyuan/dayfresh/tree/franklin/">https://gitee.com/jlyuan/dayfresh/tree/franklin/</a>
+                              </h4>
                               <p>简介：生鲜电商，为用户提供在线下单购买生鲜食品；使用Django + mysql开发</p>
+                              <h5>项目模块:</h5>
+                              <ul>
+                                  <li> 1.用户模块：密码使sha1加密、使用celery发送注册及用户找回密码的邮件、 会话数据保存在session中，使用装饰器判断用户是否登录。</li>
+                                  <li> 2.商品模块：商品的详细信息使用富文本编辑器tinymce，商品搜索使用
+                                      django-haystack + whoosh + jieba实现，用户最近浏览的商品id使用cookie保存
+                                      在本地，分页使用Django提供的Paginator。
+                                  </li>
+                                  <li>
+                                      3.购物车模块：实现对购物车的增删改查，js实现价格计算。
+                                  </li>
+                                  <li>
+                                      4.订单模块：使用事务对订单数据进行提交。
+                                  </li>
+                              </ul>
                           </div>
-                           <div>
-                              <h5>4、爬虫相关</h5>
-                              <p>4.1 使用requests + xpath 爬取过BOOS直聘职位、天猫商城商品信息</p>
-                               <p> 4.2 使用scrapy 爬取过苏宁易购书籍信息，用 MongoDB保存数据</p>
-                               <p> 4.3 使用 Selenium + PhantomJS 模拟登录过CSDN、QQ邮箱等</p>
-                               <p> 4.4 使用scrapy-redis + MongoDB 爬取过赶集租房和京东书籍信息</p>
+                          <div class="project">
+                              <h4>4、爬虫相关</h4>
+                              <ul>
+                                  <li>4.1 使用requests + xpath 爬取过BOOS直聘职位、天猫商城商品信息</li>
+                                  <li> 4.2 使用scrapy 爬取过苏宁易购书籍信息，用 MongoDB保存数据</li>
+                                  <li> 4.3 使用 Selenium + PhantomJS 模拟登录过CSDN、QQ邮箱等</li>
+                                  <li> 4.4 使用scrapy-redis + MongoDB 爬取过赶集租房和京东书籍信息</li>
+                              </ul>
+
                           </div>
                       </td>
                   </tr>
